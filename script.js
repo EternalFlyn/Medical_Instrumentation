@@ -7,19 +7,13 @@ $(document).ready(function(){
 	})
 	$.ajax({
 		type: "GET",
-		url: "https://eternalflyn.github.io/data.json",
+		url: "https://eternalflyn.github.io/Medical_Instrumentation/data.json",
 		dataType: "json",
 		success: function(data) {
 			addButton(data.menu);
 		}
 	});
 });
-
-// $(function() {
-// 	$.get("https://spreadsheets.google.com/feeds/list/1wlPcHLWdDB6fzMWJv2do26qkJH26QyUj7rF2yx-_5UI/1/public/values?alt=json", function(data) {
-// 		console.log(data);
-// 	})
-// })
 
 function addButton(menu) {
 	$.each(menu, function(i, n) {
