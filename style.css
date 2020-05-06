@@ -1,0 +1,130 @@
+body{
+  margin: 0;
+  background-color: #085;
+  font-family: DFKai-sb;
+}
+
+h1 {
+	border-bottom-style: dashed;
+	border-color: #3C9;
+	padding-bottom: 20px;
+	font-size: 36px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 20px;
+	text-align: center;
+}
+
+h3 {
+	padding-left: 30px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+h6 {
+	text-align: center;
+	font-size: 14px;
+}
+
+p {
+	padding-left: 60px;
+	font-size: 16px;
+}
+
+#header {
+	z-index: 9;
+	width: 100%;
+	height: 7vh;
+	position: fixed;
+	background-color: #3C9;
+}
+
+#title {
+	position: absolute;
+	top: 1vh;
+	left: 8vh;
+	color: white;
+	font-size: 32px;
+}
+
+#background {
+	width: 100%;
+	position: absolute;
+	top: 7vh;
+}
+
+#intro {
+	width: 75%;
+	height: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	position: relative;
+	left: 12.5%;
+	color: white ;
+	font-size: 72px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#Ker {
+	width: 50%;
+	position: relative;
+}
+
+.content {
+	margin: 0;
+	width: 75%;
+	height: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-bottom: 20px;
+	border: #053 5px solid;
+	position: relative;
+	left: 12.5%;
+	background-color: white;
+}
+
+.content ol {
+	padding-left: 90px;
+	font-size: 16px;
+}
+
+.content li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.content img {
+	width: 70%;
+	position: relative;
+	left: 15%
+}
+
+#SWOT {
+	width: 70%;
+	position: relative;
+	left: 15%;
+	font-size: 20px;
+}
+
+.tableTitle {
+	text-align: center;;
+}
+
+.名期 {
+	color: red;
+}
+
+.秉則 {
+	color: green;
+}
+
+.議徵 {
+	color: blue;
+}
+
+.浤豪 {
+	color: black;
+}

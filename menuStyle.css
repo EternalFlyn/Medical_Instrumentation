@@ -1,0 +1,66 @@
+#menu {
+	z-index: 10;
+	width: 20vw;
+	height: 100vh;
+	position: fixed;
+	left: 0vw;
+}
+
+#menuIcon {
+	width: 6.5vh;
+	height: 6.5vh;
+	position: relative;
+	top: 2px;
+	left: 0.5vw;
+}
+
+#menuContent {
+	overflow: auto;
+	z-index: 8;
+	display: none;
+	height: 93vh;
+	position: relative;
+	background-color: #DDD;
+}
+
+#menuContent::-webkit-scrollbar {
+    display: none;
+}
+
+.menuButton {
+	width: 17vw;
+	height: auto;
+	border: #DDD 1vw solid;
+	position: relative;
+	top: 1vh;
+	left: 0.5vw;
+	background-color: #3C9;
+}
+
+.menuTitle {
+	width: 16.5vw;
+	height: 40px;
+	padding-top: 5px;
+	padding-left: 0.5vw;
+	font-size: 28px;
+	color: white;
+	background-color: #399;
+}
+
+.menuButton ul {
+	display: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 24px;
+	color: white;
+	background-color: #3C9;
+}
+
+.menuButton li {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.menuButton li:hover {
+	color: gray;
+}

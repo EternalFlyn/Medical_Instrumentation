@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>醫測儀表期末報告</title>
+		<link rel = "stylesheet" type = "text/css" href = "menuStyle.css"></link>
+		<link rel = "stylesheet" type = "text/css" href = "style.css"></link>
+		<script type = "text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script>
+			function jump(title, id, link) {
+				if(title == $("#title").text()) {
+					let pos = $("#" + id).offset().top - $("#header").height();
+					$("html,body").animate({scrollTop:pos}, 800);
+				}
+				else {
+					$(location).attr("href", link + "#" + id);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id = "header">
+			<div id = "title">設計資料</div>
+		</div>
+		<div id = "menu">
+			<img id = "menuIcon" src = "./image/icon_navigation_bar.png">
+			<div id = "menuContent"></div>
+		</div>
+		<div id = "background">
+			<div class = "content" id = "儀器外觀">
+				<h1>儀器外觀</h1>
+			</div>
+			<div class = "content" id = "電路線路圖">
+				<h1>電路線路圖</h1>
+			</div>
+			<div class = "content" id = "電路板佈線圖">
+				<h1>電路板佈線圖</h1>
+			</div>
+			<div class = "content" id = "機構爆炸組裝圖">
+				<h1>機構爆炸組裝圖</h1>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>醫測儀表期末報告</title>
+		<link rel = "stylesheet" type = "text/css" href = "menuStyle.css"></link>
+		<link rel = "stylesheet" type = "text/css" href = "style.css"></link>
+		<script type = "text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script>
+			function jump(title, id, link) {
+				if(title == $("#title").text()) {
+					let pos = $("#" + id).offset().top - $("#header").height();
+					$("html,body").animate({scrollTop:pos}, 800);
+				}
+				else {
+					$(location).attr("href", link + "#" + id);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id = "header">
+			<div id = "title">首頁</div>
+		</div>
+		<div id = "menu">
+			<img id = "menuIcon" src = "./image/icon_navigation_bar.png">
+			<div id = "menuContent"></div>
+		</div>
+		<div id = "background">
+			<div id = "intro">
+				COVID-19 Ker星
+				<h2>組別：A10</h2>
+				<h2>組長：10625112 張名期</h2>
+				<h2>組員：10625106 李秉則 10625111 黃議徵 10625157 王浤豪</h2>
+				<img id = "Ker" src = "./image/COVID-19Ker星.png">
+			</div>
+			<div class = "content" id = "背景">
+				<h1>背景</h1>
+				<p>面對突如其來且未知的Covid-19，讓整個世界都亂了手腳，對全球的影響非常大。病毒在日常生活中很難被大家所察覺，又因為此次的病毒傳播途徑廣泛且潛伏期長達兩周，再加上口罩的不足讓多數人陷入了恐慌。面對這次地病毒的難關我們想到如果可以將原本市面上原有的空氣清淨口罩加以改良，加上可以阻隔病毒的口罩及酒精，在外面可以達到保護的功能。</p>
+			</div>
+			<div class = "content" id = "目的">
+				<h1>目的</h1>
+				<p>將原本市面上原有的空氣清淨口罩改良，加上可以阻隔病毒的口罩濾芯及簡易噴灑酒精裝置，並且口罩濾芯消毒後可以重複使用達到減少口罩的丟棄數量，機身可以拆卸清洗即可。在外面時後隨時可以使用酒精清潔手部，不需要另外攜帶酒精瓶，達到二合一的概念。<p>
+			</div>
+			<div class = "content" id = "參考資料">
+				<h1>參考資料</h1>
+				<p>https://www.hw-airpurifier.com.tw/item.php?p_id=19</p>
+				<p>https://ahui3c.com/36573/honeywell-n95</p>
+				<p>https://applianceinsight.com.tw/blog/post/honeywell-matw9501b</p>
+			</div>
+		</div>
+	</body>
+</html>

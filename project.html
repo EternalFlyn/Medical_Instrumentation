@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>醫測儀表期末報告</title>
+		<link rel = "stylesheet" type = "text/css" href = "menuStyle.css"></link>
+		<link rel = "stylesheet" type = "text/css" href = "style.css"></link>
+		<script type = "text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script>
+			function jump(title, id, link) {
+				if(title == $("#title").text()) {
+					let pos = $("#" + id).offset().top - $("#header").height();
+					$("html,body").animate({scrollTop:pos}, 800);
+				}
+				else {
+					$(location).attr("href", link + "#" + id);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id = "header">
+			<div id = "title">設計專案</div>
+		</div>
+		<div id = "menu">
+			<img id = "menuIcon" src = "./image/icon_navigation_bar.png">
+			<div id = "menuContent"></div>
+		</div>
+		<div id = "background">
+			<div class = "content" id = "心智地圖">
+				<h1>心智地圖</h1>
+				<img src = "./image/心智地圖.jpg">
+			</div>
+			<div class = "content" id = "強弱危機分析">
+				<h1>強弱危機分析</h1>
+				<table id = "SWOT" border="1">
+					<tr>
+						<td></td>
+						<td class = "tableTitle">對達成目標有益的</td>
+						<td class = "tableTitle">對達成目標有害的</td>
+					</tr>
+					<tr>
+						<td rowspan = "2">內部</td>
+						<td class = "tableTitle">優勢</td>
+						<td class = "tableTitle">劣勢</td>
+					</tr>
+					<tr>
+						<td>目前的口罩價格便宜、輕便、容易取得。</td>
+						<td>免洗式不環保，戴的時候呼吸較為困難，容易缺氧，上課會想睡覺。大小只有單一尺寸，臉大的人容易耳朵痛，臉小的人容易遮到眼睛。</td>
+					</tr>
+					<tr>
+						<td rowspan = "2">外部</td>
+						<td class = "tableTitle">機會</td>
+						<td class = "tableTitle">威脅</td>
+					</tr>
+					<tr>
+						<td>因武漢肺炎影響，口罩大賣，甚至被政府列為管制品。</td>
+						<td>因武漢肺炎影響，每人都必須配戴口罩，在吃飯時要把口罩取下，和可能充滿病毒的空氣、桌面接觸，造成戴口罩無效。</td>
+					</tr>
+				</table>
+			</div>
+			<div class = "content" id = "魚骨圖">
+				<h1>魚骨圖</h1>
+				<img src = "./image/魚骨圖.jpg">
+			</div>
+			<div class = "content" id = "甘特圖">
+				<h1>甘特圖</h1>
+				<img src = "./image/甘特圖.png">
+			</div>
+			<div class = "content" id = "市場分析">
+				<h1>市場分析</h1>
+				<img src = "./image/市場分析.jpg">
+			</div>
+		</div>
+	</body>
+</html>
