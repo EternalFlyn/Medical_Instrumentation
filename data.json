@@ -13,7 +13,7 @@
 		{
 			"title" : "設計資料",
 			"link" : "https://eternalflyn.github.io/Medical_Instrumentation/data",
-			"item" : ["儀器外觀", "電路線路圖", "電路板佈線圖", "機構爆炸組裝圖"]
+			"item" : ["儀器外觀", "電路線路圖", "電路板佈線圖"]
 		},
 		{
 			"title" : "會議記錄",
